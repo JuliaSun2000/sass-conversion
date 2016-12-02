@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /***********************************************
                 NOTES
 light blue  #C7F7FF
@@ -10,572 +11,678 @@ dark grey   #222
 
                 DEFAULTS
 ***********************************************/
+/* line 18, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
-*{
-    padding:0;
-    margin: 0;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+/* line 23, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+* :after,
+* :before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
 }
-*:after,
-*:before{
-    -webkit-box-sizing: inherit;
-    box-sizing: inherit;
+
+/* line 29, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+html {
+  font-size: 16px;
+  font-family: "Josefin Sans", ‘Trebuchet MS’, Helvetica, sans-serif;
+  /* default for whole page */
+  line-height: 1.6;
 }
-html{
-    font-size: 16px;
-    font-family: 'Josefin Sans', ‘Trebuchet MS’, Helvetica, sans-serif; /* default for whole page */
-    line-height: 1.6;
+
+/* line 34, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+h1, h2, h3, h4 {
+  font-family: Cardo, ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+  /* serif for the headings */
 }
-h1, h2, h3, h4{
-    font-family: Cardo, ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif; /* serif for the headings */
+
+/* line 37, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+ul {
+  list-style: none;
 }
-ul{
-    list-style: none;
-}
+
 /***********************************************
                 SPECIAL
 ***********************************************/
-
-.clearfix:after{
-    display:table;
-    clear: both;
-    content: "";
+/* line 44, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+.clearfix:after {
+  display: table;
+  clear: both;
+  content: "";
 }
 
 /***********************************************
                 LAYOUT
 ***********************************************/
-.bg-header{
-    background-color: #fff;
-    background-color:#C7F7FF;
-    color: #222;
-    border-bottom:1rem solid #89C0C9;
-    border-top:1rem solid #3a5E63;
-    position: relative;
+/* line 53, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+.bg-header {
+  background-color: #fff;
+  background-color: #C7F7FF;
+  color: #222;
+  border-bottom: 1rem solid #89C0C9;
+  border-top: 1rem solid #3a5E63;
+  position: relative;
 }
-.bg-header:before,
-.bg-header:after{
-    content:"";
-    position:absolute;
-    bottom:-1rem;
-    width:30%;
-    height:1rem;
-    background-color: #3a5E63;
+
+/* line 60, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+.bg-header:before, .bg-header:after {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  width: 30%;
+  height: 1rem;
+  background-color: #3a5E63;
 }
-.bg-header:before{
-    left:0;
+
+/* line 69, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+.bg-header:before {
+  left: 0;
 }
-.bg-header:after{
-    right:0;
+
+/* line 72, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+.bg-header:after {
+  right: 0;
 }
-.bg-focal{
-    background-color: #C9A689;
-    color: #7C593C;
+
+/* line 77, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+.bg-focal {
+  background-color: #C9A689;
+  color: #7C593C;
 }
-.bg-content1{
-    background-color: #fff;
-    color: #222;
+
+/* line 80, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+.bg-content1 {
+  background-color: #fff;
+  color: #222;
 }
-.bg-content2{
-    background-color: #C7F7FF;
-    color: #3a5E63;
+
+/* line 83, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+.bg-content2 {
+  background-color: #C7F7FF;
+  color: #3a5E63;
 }
-.bg-footer{
-    background-color: #fff;
-    color: #d4d4d4;
+
+/* line 86, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+.bg-footer {
+  background-color: #fff;
+  color: #d4d4d4;
 }
-header{
-    width: 400px; /* default */
-    margin: 0 auto;
-    position: relative;
+
+/* line 89, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+header {
+  width: 700px;
+  margin: 0 auto;
+  position: relative;
 }
-header h1{
-    width: 100%;
-    padding: 0 2rem;
+
+/* line 92, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+header h1 {
+  width: 100%;
+  padding: 0;
+  color: #7C593C;
+  letter-spacing: 0.1rem;
 }
-header nav{
-    width: 100%;
+
+/* line 97, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+header h1 i.fa-lg ~ span {
+  float: right;
+  width: 75%;
+  font-size: 3.998rem;
+  /**
+            2 lines of 3.998 * 1.6 = 12.7936
+            **/
+  padding-left: 1rem;
+  text-align: right;
 }
-header nav>ul li{
-    width:100%;
-    float: none;
+
+/* line 108, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+header nav {
+  width: 100%;
+  padding: 2rem 0;
+  clear: both;
 }
-section.focal{
-    width: 400px; /* default */
-    margin: 0 auto;
+
+/* line 112, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+header nav > ul li {
+  width: 100%;
+  float: none;
 }
-section.content1{
-    padding: 2rem 0;
+
+/* line 115, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+header nav > ul li > a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #222;
+  padding: 1rem 2rem;
+  font-size: 1.414rem;
+  letter-spacing: 0.25rem;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  line-height: 1;
+  background-color: #fff;
 }
-section.content2{
-    padding:2rem 0;    
+
+/* line 128, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+header nav > ul li > a:hover {
+  font-weight: 700;
+  color: #7C593C;
 }
-.row{
-    clear: both;
+
+/* line 137, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+section.content1, section.content2 {
+  padding: 2rem 0;
 }
-.col-2{
-    width:50%;
-    float:left;
-    padding-bottom: 2rem;
-    border-left:1px solid #3a5E63;
-    margin-bottom: 2rem;
+
+/* line 142, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+section.focal {
+  width: 400px;
+  margin: 0 auto;
 }
-footer .col-2:first-child{
-    border-left: 0;
+
+/* line 152, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+.row {
+  clear: both;
 }
-footer{
-    padding:2rem 0;
+
+/* line 155, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+.col-2 {
+  width: 50%;
+  float: left;
+  padding-bottom: 2rem;
+  border-left: 1px solid #3a5E63;
+  margin-bottom: 2rem;
 }
-footer p:last-child{
+
+/* line 163, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+footer {
+  padding: 2rem 0;
 }
+
+/* line 165, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+footer .col-2:first-child {
+  border-left: 0;
+}
+
+/* line 168, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+footer h4 {
+  font-size: 1.414rem;
+  padding: 0.5rem 2rem;
+  color: #7C593C;
+}
+
+/* line 172, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+footer h4[lang=de] {
+  display: block;
+}
+
+/* line 175, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+footer h4[lang=en], footer h4[lang=ar], footer h4[lang=ru] {
+  display: none;
+}
+
+/* line 181, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+footer p {
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+}
+
+/* line 185, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+footer .fa-circle, footer p {
+  color: #222;
+}
+
 /***********************************************
                 NAVIGATION
 ***********************************************/
-header nav{
-    padding:2rem 0;
-    clear: both;
-}
-header nav>ul>li>a{
-    display:block;
-    text-align: center;
-    text-decoration: none;
-    color: #222;    
-    font-size: 1.414rem;
-    letter-spacing: 0.25rem;
-    border:1px solid #d4d4d4; 
-    border-bottom: none;
-    padding:1.0rem 2rem;
-    line-height: 1;
-    background-color: #fff;
-}
-header nav>ul>li>a:hover{
-    font-weight: 700;
-    color:#7C593C;
-}
-
 /***********************************************
                 CONTENT
 ***********************************************/
-header h1{
-    color: #7C593C;
-    letter-spacing: 0.1rem;
+/* line 200, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+.focal h2 {
+  padding: 2rem 2rem 1rem 2rem;
+  font-size: 1.999rem;
+  line-height: 1.2;
 }
-header h1 i.fa-lg{
-    display:block;
-    width: 25%;
-    float:left;
-    font-size: 7rem;
-    line-height: 12.7936rem;
-    color: #C9A689;
+
+/* line 204, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+.focal .author {
+  padding: 0.2rem 2rem 2rem;
+  font-size: 1rem;
 }
-header h1 i.fa-lg ~ span{
-    float: right;
-    width: 75%;
-    font-size: 3.998rem;
-    /**
-    2 lines of 3.998 * 1.6 = 12.7936
-    **/
-    padding-left: 1rem;
-    text-align: right;
+
+/* line 209, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+.content1 h3 {
+  font-size: 1.999rem;
+  padding: 0.2rem 2rem 2rem;
 }
-.focal h2{
-    font-size: 1.999rem;
-    line-height: 1.2;
-    padding: 2rem 2rem 1rem 2rem;
+
+/* line 212, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+.content1 h3 i {
+  vertical-align: middle;
+  padding-right: 2rem;
 }
-.focal .author{
-    font-size: 1rem;
-    padding: 0.2rem 2rem 2rem;
+
+/* line 217, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+.content1 p {
+  padding: 0.5rem 2rem 2rem;
+  font-size: 1.414rem;
 }
-.content1 h3{
-    font-size:1.999rem;
-    padding: 0.2rem 2rem 2rem;
+
+/* line 222, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+.content2 h3 {
+  padding: 1rem 2rem 0.5rem;
+  font-size: 1.999rem;
 }
-.content1 h3 i{
-    vertical-align:middle;
-    padding-right: 2rem;
+
+/* line 225, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+.content2 h4 {
+  padding: 1rem 2rem 0rem;
+  font-size: 1.999rem;
 }
-.content1 p{
-    font-size: 1.414rem;
-    padding: 0.5rem 2rem 2rem;
+
+/* line 228, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+.content2 p {
+  padding: 0.5rem 2rem 1rem;
+  font-size: 1.414rem;
 }
-.content2 h3{
-    font-size: 1.999rem;
-    padding: 1rem 2rem 0.5rem;
+
+/* line 231, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+.content2 li {
+  padding: 0.5rem 2rem;
+  font-size: 1.414rem;
 }
-.content2 h4{
-    font-size: 1.999rem;
-    padding: 1rem 2rem 0rem;
-}
-.content2 p{
-    font-size: 1.414rem;
-    padding: 0.5rem 2rem 1rem;
-}
-.content2 li{
-    padding: 0.5rem 2rem;
-    font-size: 1.414rem;
-}
+
 /***********************************************
                 FOOTER
 ***********************************************/
-footer h4{
-    font-size: 1.414rem;
-    padding: 0.5rem 2rem;
-    color: #7C593C;
-}
-footer p{
-    font-size: 1rem;
-    padding: 0.5rem 2rem;
-    color: #222;
-}
-footer .fa-circle{
-    color: #222;
-}
-footer h4[lang=de]{
-   display:block;
-}
-footer h4[lang=en],
-footer h4[lang=ar],
-footer h4[lang=ru]{
-    display:none;
-}
-
 /***********************************************
                 MEDIA QUERIES
 ***********************************************/
-
-@media all and (min-width:701px) and (max-width:900px){
-    header{
-        width: 700px;
-        margin: 0 auto;
-        min-height: 8rem;
-    }
-    header h1{
-        width: 100%;
-        color: #7C593C;
-    }
-    header:before,
-    header:after{
-        width:230px;
-    }
-    header h1 i.fa-lg{
-        display:inline;
-        color: #7C593C;
-        vertical-align:baseline;
-        float:none;
-        font-size: 4rem;
-        line-height: 6.3968rem;
-    }
-    header h1 i.fa-lg ~ span{
-        float: none;
-        letter-spacing: 0.25rem;
-        font-size: 3.998rem;
-        /**
-        1 lines of 3.998 * 1.6 = 6.3968
-        **/
-        text-align: left;
-    }
-    header nav{
-        position: static;
-        clear:both;
-        width: 100%;
-        padding: 0;
-    }
-    header nav>ul>li{
-        width:20%;
-        float: left;
-    }
-    header nav>ul>li>a{
-        font-size: 1rem;
-        line-height: 2rem;
-        min-height: 6rem;
-        border:none;
-        border-left:1px solid #d4d4d4; 
-        padding:1.0rem;
-        background-color: #fff;
-    }
-    header nav>ul>li>a:last-child{
-        border-right:1px solid #d4d4d4;
-    }
-    section.focal, 
-    section.content1,
-    section.content2,
-    footer{
-        width: 700px; 
-        margin: 0 auto;    
-    }
-    .col-4{
-        width:50%;
-        float:left;
-    }
-    section.content2 h4{
-        font-size: 1.414rem;
-    }
-    section.content2 li{
-        font-size: 1.414rem;
-    }
-    footer .fa-circle{
-        color: #89C0C9;
-    }
-    footer .col-2:last-child{
-        unicode-bidi: bidi-override;
-        direction: rtl;
-    }
-    footer h4[lang=ar]{
-       display:block;
-    }
-    footer h4[lang=de],
-    footer h4[lang=en],
-    footer h4[lang=ru]{
-        display:none;
-    }
+@media all and (min-width: 701px) and (max-width: 900px) {
+  /* line 245, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  header {
+    width: 700px;
+    margin: 0 auto;
+    min-height: 8rem;
+  }
+  /* line 248, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  header h1 {
+    width: 100%;
+    color: #7C593C;
+  }
+  /* line 251, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  header h1 i.fa-lg {
+    display: inline;
+    color: #7C593C;
+    vertical-align: baseline;
+    float: none;
+    font-size: 4rem;
+    line-height: 6.3968rem;
+  }
+  /* line 258, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  header h1 i.fa-lg ~ span {
+    float: none;
+    letter-spacing: 0.25rem;
+    font-size: 3.998rem;
+    /**
+                    1 lines of 3.998 * 1.6 = 6.3968
+                    **/
+    text-align: left;
+  }
+  /* line 269, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  header:before, header:after {
+    width: 230px;
+  }
+  /* line 273, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  header nav {
+    position: static;
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+  /* line 278, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  header nav > ul > li {
+    width: 20%;
+    float: left;
+  }
+  /* line 281, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  header nav > ul > li > a {
+    font-size: 1rem;
+    line-height: 2rem;
+    min-height: 6rem;
+    border: none;
+    border-left: 1px solid #d4d4d4;
+    padding: 1rem;
+    background-color: #fff;
+  }
+  /* line 289, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  header nav > ul > li > a:last-child {
+    border-right: 1px solid #d4d4d4;
+  }
+  /* line 296, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  section.focal,
+  section.content1,
+  section.content2,
+  footer {
+    width: 700px;
+    margin: 0 auto;
+  }
+  /* line 302, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  .col-4 {
+    width: 50%;
+    float: left;
+  }
+  /* line 308, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  section.content2 h4, section.content2 li {
+    font-size: 1.414rem;
+  }
+  /* line 314, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  footer .fa-circle, footer p {
+    color: #89C0C9;
+  }
+  /* line 317, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  footer .col-2:last-child {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+  }
+  /* line 322, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  footer h4[lang=ar] {
+    display: block;
+  }
+  /* line 325, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  footer h4[lang=de], footer h4[lang=en], footer h4[lang=ru] {
+    display: none;
+  }
 }
 
-
-
-@media all and (min-width:901px) and (max-width: 1400px){
-    header{
-        width: 900px;
-        margin: 0 auto;
-    }
-    header:before,
-    header:after{
-        width:300px;
-    }
-    header h1{
-        width: 100%;
-        color: #3a5E63;
-    }
-    header h1 i.fa-lg{
-        display:inline;
-        color: #3a5E63;
-        vertical-align:baseline;
-        float:none;
-        font-size: 4rem;
-        line-height: 6.3968rem;
-    }
-    header h1 i.fa-lg ~ span{
-        float: none;
-        letter-spacing: 0.25rem;
-        font-size: 3.998rem;
-        /**
-        1 lines of 3.998 * 1.6 = 6.3968
-        **/
-        text-align: left;
-    }
-    header nav{
-        position: static;
-        clear:both;
-        width: 100%;
-        padding: 0;
-    }
-    header nav>ul>li{
-        width:20%;
-        float: left;
-        background-color: #fff;
-    }
-    header nav>ul>li>a{
-        font-size: 1rem;
-        line-height: 2rem;
-        min-height: 2rem;
-        border:none;
-        border-left:1px solid #d4d4d4; 
-        padding: 0 1.0rem;
-        margin: 1.0rem 0;
-        background-color: #fff;
-    }
-    header nav>ul>li:first-child a{
-        border-left:none;
-    }
-    section.focal, 
-    section.content1,
-    section.content2,
-    footer{
-        width: 900px; 
-        margin: 0 auto;    
-    }
-    section.focal h2{
-        width: 600px; 
-        margin: 0 auto;
-    }
-    section.focal p.author{
-        width: 600px; 
-        margin: 0 auto;
-    }
-    .col-3{
-        float:left;
-        width: 30%;
-        margin-left: 5%;
-    }
-    .col-3:first-child{
-        margin-left: 0;
-    }
-    .col-4{
-        width:22%;
-        margin-left: 4%;
-        float:left;
-    }
-    .col-4:first-child{
-        margin-left: 0;
-    }
-    section.content1 h3{
-        font-size: 1.999rem;
-        font-weight: 100;
-    }
-    section.content1 h3 .fa-2x{
-        font-size: 1.999rem;
-        padding-right: 1rem;
-    }
-    
-    section.content2 h4{
-        font-size: 1.414rem;
-    }
-    section.content2 li{
-        font-size: 1.414rem;
-    }
-    section.content2 p{
-        font-size: 1rem;
-        font-weight: 400;
-    }
-    footer .fa-circle{
-        color: #C9A689;
-    }
-    footer h4[lang=ru]{
-       display:block; 
-    }
-    footer h4[lang=de],
-    footer h4[lang=ar],
-    footer h4[lang=en]{
-        display:none;
-    }
+@media all and (min-width: 901px) and (max-width: 1400px) {
+  /* line 334, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  header {
+    width: 900px;
+    margin: 0 auto;
+  }
+  /* line 336, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  header:before, header:after {
+    width: 300px;
+  }
+  /* line 340, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  header h1 {
+    width: 100%;
+    color: #3a5E63;
+  }
+  /* line 343, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  header h1 i.fa-lg {
+    display: inline;
+    color: #3a5E63;
+    vertical-align: baseline;
+    float: none;
+    font-size: 4rem;
+    line-height: 6.3968rem;
+  }
+  /* line 350, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  header h1 i.fa-lg ~ span {
+    float: none;
+    letter-spacing: 0.25rem;
+    font-size: 3.998rem;
+    /**
+                    1 lines of 3.998 * 1.6 = 6.3968
+                    **/
+    text-align: left;
+  }
+  /* line 361, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  header nav {
+    position: static;
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+  /* line 366, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  header nav > ul > li {
+    width: 20%;
+    float: left;
+    background-color: #fff;
+  }
+  /* line 370, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  header nav > ul > li > a {
+    font-size: 1rem;
+    line-height: 2rem;
+    min-height: 2rem;
+    border: none;
+    border-left: 1px solid #d4d4d4;
+    padding: 0 1.0rem;
+    margin: 1.0rem 0;
+    background-color: #fff;
+  }
+  /* line 380, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  header nav > ul > li:first-child a {
+    border-left: none;
+  }
+  /* line 386, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  section.focal,
+  section.content1,
+  section.content2,
+  footer {
+    width: 900px;
+    margin: 0 auto;
+  }
+  /* line 393, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  section.focal h2 {
+    width: 600px;
+    margin: 0 auto;
+  }
+  /* line 396, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  section.focal p.author {
+    width: 600px;
+    margin: 0 auto;
+  }
+  /* line 401, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  .col-3 {
+    float: left;
+    width: 30%;
+    margin-left: 5%;
+  }
+  /* line 403, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  .col-3:first-child {
+    margin-left: 0;
+  }
+  /* line 408, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  .col-4 {
+    float: left;
+    width: 22%;
+    margin-left: 4%;
+  }
+  /* line 410, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  .col-4:first-child {
+    margin-left: 0;
+  }
+  /* line 415, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  section.content1 h3 {
+    font-size: 1.999rem;
+    font-weight: 100;
+  }
+  /* line 418, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  section.content1 h3 .fa-2x {
+    font-size: 1.999rem;
+    padding-right: 1rem;
+  }
+  /* line 424, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  section.content2 h4 {
+    font-size: 1.414rem;
+  }
+  /* line 427, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  section.content2 li {
+    font-size: 1.414rem;
+  }
+  /* line 430, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  section.content2 p {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  /* line 437, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  footer .fa-circle, footer p {
+    color: #C9A689;
+  }
+  /* line 441, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  footer h4[lang=ru] {
+    display: block;
+  }
+  /* line 444, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  footer h4[lang=de], footer h4[lang=ar], footer h4[lang=en] {
+    display: none;
+  }
 }
 
-
-@media all and (min-width:1401px){
-    header{
-        width: 1400px;
-        margin:0 auto;
-    }
-    header:before,
-    header:after{
-        width:450px;
-    }
-    header h1{
-        width: 100%;
-        color: #7C593C;
-    }
-    header h1 i.fa-lg{
-        display:inline;
-        color: #7C593C;
-        vertical-align:baseline;
-        float:none;
-        font-size: 4rem;
-        line-height: 6.3968rem;
-    }
-    header h1 i.fa-lg ~ span{
-        float: none;
-        letter-spacing: 0.25rem;
-        font-size: 3.998rem;
-        /**
-        1 lines of 3.998 * 1.6 = 6.3968
-        **/
-        text-align: left;
-    }
-    header nav{
-        position: static;
-        clear:both;
-        width: 100%;
-        padding: 0;
-    }
-    header nav>ul>li{
-        width:20%;
-        float: left;
-        background-color: #fff;
-    }
-    header nav>ul>li>a{
-        font-size: 1.414rem;
-        line-height: 2rem;
-        min-height: 2rem;
-        border:none;
-        border-left:1px solid #d4d4d4; 
-        padding:0 1.0rem;
-        margin:1.0rem 0;
-        background-color: #fff;
-    }
-    header nav>ul>li:first-child a{
-        border-left:none;
-    }
-    section.focal, 
-    section.content1,
-    section.content2,
-    footer{
-        width: 1400px; 
-        margin: 0 auto;    
-    }
-    section.focal h2{
-        font-size: 3.998rem;
-        width: 600px; 
-        margin: 0 auto;
-    }
-    section.focal p.author{
-        width: 600px; 
-        margin: 0 auto;
-    }
-    .col-3{
-        float:left;
-        width: 30%;
-        margin-left: 5%;
-    }
-    .col-3:first-child{
-        margin-left: 0;
-    }
-    .col-4{
-        width:22%;
-        margin-left: 4%;
-        float:left;
-    }
-    .col-4:first-child{
-        margin-left: 0;
-    }
-    section.content1 h3{
-        font-size: 2.827rem;
-        font-weight: 100;
-    }
-    section.content1 h3 .fa-2x{
-        font-size: 2.827rem;
-        padding-right: 1rem;
-        vertical-align: middle;
-    }
-    
-    section.content2 h4{
-        font-size: 1.999rem;
-    }
-    section.content2 li{
-        font-size: 1.999rem;
-    }
-    section.content2 p{
-        font-size: 1.414rem;
-        font-weight: 400;
-    }
-    footer p{
-        font-size: 1.414rem;
-        letter-spacing: 0.2rem;
-    }
-    footer p:last-child{
-        color: #d4d4d4;
-    }
-    footer .fa-circle{
-        color: #89C0C9;
-    }
-    
-    footer h4[lang=en]{
-       display:block; 
-    }
-    footer h4[lang=de],
-    footer h4[lang=ar],
-    footer h4[lang=ru]{
-        display:none;
-    }
-    
+@media all and (min-width: 1401px) {
+  /* line 455, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  header {
+    width: 1400px;
+    margin: 0 auto;
+  }
+  /* line 457, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  header:before, header:after {
+    width: 450px;
+  }
+  /* line 461, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  header h1 {
+    width: 100%;
+    color: #7C593C;
+  }
+  /* line 464, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  header h1 i.fa-lg {
+    display: inline;
+    color: #7C593C;
+    vertical-align: baseline;
+    float: none;
+    font-size: 4rem;
+    line-height: 6.3968rem;
+  }
+  /* line 471, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  header h1 i.fa-lg ~ span {
+    float: none;
+    letter-spacing: 0.25rem;
+    font-size: 3.998rem;
+    /**
+                    1 lines of 3.998 * 1.6 = 6.3968
+                    **/
+    text-align: left;
+  }
+  /* line 482, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  header nav {
+    position: static;
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+  /* line 487, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  header nav > ul > li {
+    width: 20%;
+    float: left;
+    background-color: #fff;
+  }
+  /* line 491, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  header nav > ul > li > a {
+    font-size: 1.414rem;
+    line-height: 2rem;
+    min-height: 2rem;
+    border: none;
+    border-left: 1px solid #d4d4d4;
+    padding: 0 1.0rem;
+    margin: 1.0rem 0;
+    background-color: #fff;
+  }
+  /* line 501, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  header nav > ul > li:first-child a {
+    border-left: none;
+  }
+  /* line 507, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  section.focal,
+  section.content1,
+  section.content2,
+  footer {
+    width: 1400px;
+    margin: 0 auto;
+  }
+  /* line 515, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  section.focal h2 {
+    font-size: 3.998rem;
+    width: 600px;
+    margin: 0 auto;
+  }
+  /* line 519, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  section.focal p.author {
+    width: 600px;
+    margin: 0 auto;
+  }
+  /* line 523, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  section.content1 h3 {
+    font-size: 2.827rem;
+    font-weight: 100;
+  }
+  /* line 526, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  section.content1 h3 .fa-2x {
+    font-size: 2.827rem;
+    padding-right: 1rem;
+    vertical-align: middle;
+  }
+  /* line 533, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  section.content2 h4 {
+    font-size: 1.999rem;
+  }
+  /* line 536, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  section.content2 li {
+    font-size: 1.999rem;
+  }
+  /* line 539, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  section.content2 p {
+    font-size: 1.414rem;
+    font-weight: 400;
+  }
+  /* line 545, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  .col-3 {
+    float: left;
+    width: 30%;
+    margin-left: 5%;
+  }
+  /* line 549, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  .col-3:first-child {
+    margin-left: 0;
+  }
+  /* line 553, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  .col-4 {
+    width: 22%;
+    margin-left: 4%;
+    float: left;
+  }
+  /* line 557, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  .col-4:first-child {
+    margin-left: 0;
+  }
+  /* line 562, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  footer p {
+    font-size: 1.414rem;
+    letter-spacing: 0.2rem;
+  }
+  /* line 565, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  footer p:last-child {
+    color: #d4d4d4;
+  }
+  /* line 569, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  footer .fa-circle, footer p {
+    color: #89C0C9;
+  }
+  /* line 573, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  footer h4[lang=en] {
+    display: block;
+  }
+  /* line 576, F:/AC/MAD9013/sass-conversion-gh-pages/sass-conversion-gh-pages/sass/main.scss */
+  footer h4[lang=de], footer h4[lang=ar], footer h4[lang=ru] {
+    display: none;
+  }
 }
+
+/*# sourceMappingURL=../css/main.map */

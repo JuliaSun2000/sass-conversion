@@ -1,0 +1,22 @@
+@mixin wid-m($width) {
+    width: $width;
+    margin: 0 auto;
+}
+@mixin w-b-s($w){
+    -webkit-box-sizing: $w;
+    box-sizing: $w;
+    @content;
+}
+@mixin b-c($c1,$c2){
+    background-color: $c1;
+    color: $c2;
+}
+@mixin w-m-f($w,$ml){
+   float:left;
+   width: $w;
+   margin-left: $ml;
+}
+@mixin p-f ($p,$f){
+  padding: $p;
+  font-size: $f;
+}
