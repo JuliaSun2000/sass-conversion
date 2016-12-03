@@ -1,22 +1,66 @@
-@mixin wid-m($width) {
-    width: $width;
-    margin: 0 auto;
+@mixin b-c($b,$c){
+    background-color: $b;
+    color: $c;
+    @content;
 }
 @mixin w-b-s($w){
     -webkit-box-sizing: $w;
     box-sizing: $w;
     @content;
 }
-@mixin b-c($c1,$c2){
-    background-color: $c1;
-    color: $c2;
+
+@mixin column-size($numPerRow,$margin) {
+  width: ((100% - (($numPerRow - 1) * $margin)) / $numPerRow);
+  &:nth-child(n) {
+    margin-left: $margin;
+  }
 }
-@mixin w-m-f($w,$ml){
-   float:left;
-   width: $w;
-   margin-left: $ml;
+
+@mixin wid-m($w) {
+    width: $w;
+    margin: 0 auto;
 }
+
+@mixin w-p($w,$p) {
+  width: $w;
+  padding: $p;
+}
+
+@mixin w-f($w,$f){
+    width: $w;
+    float:$f;
+    @content;
+}
+
 @mixin p-f ($p,$f){
   padding: $p;
   font-size: $f;
+}
+@mixin fa-lg($c,$fl,$S,$lh){
+  display:inline;
+  color: $c;
+  vertical-align:baseline;
+  float:$fl;
+  font-size:$S;
+  line-height: $lh;
+}
+@mixin h4 ($a,$b,$c,$d){
+  h4 {
+    &[lang=#{$a}] {
+      display: block;
+    }
+    &[lang=#{$b}], &[lang=#{$c}], &[lang=#{$d}] {
+      display: none;
+    }
+  }
+}
+@mixin span($ls,$fs) {
+  float: none;
+  letter-spacing: $ls;
+  font-size: $fs;
+  text-align: left;
+}
+@mixin fs-fw($fs,$fw) {
+  font-size: $fs;
+  font-weight: $fw;
 }

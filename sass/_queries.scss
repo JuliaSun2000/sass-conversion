@@ -1,0 +1,19 @@
+$break-small: 701px;
+$break-medium: 900px;
+$break-large: 1400px;
+
+@mixin for-tablet {
+  @media all and (min-width:$break-small) and (max-width:$break-medium) {
+    @content;
+  }
+}
+@mixin for-desktop {
+  @media all and (min-width:($break-medium + 1)) and (max-width:$break-large) {
+    @content;
+  }
+}
+@mixin for-big-desktop {
+  @media all and (min-width:($break-large + 1)) {
+    @content;
+  }
+}
